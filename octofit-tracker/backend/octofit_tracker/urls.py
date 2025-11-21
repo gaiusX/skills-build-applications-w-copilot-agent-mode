@@ -1,3 +1,4 @@
+
 from django.urls import path, include
 from rest_framework import routers
 from . import views
@@ -8,7 +9,7 @@ router.register(r"profiles", views.UserProfileViewSet)
 router.register(r"activities", views.ActivityViewSet)
 router.register(r"teams", views.TeamViewSet)
 router.register(r"leaderboard", views.LeaderboardEntryViewSet)
-router.register(r"suggestions", views.WorkoutSuggestionViewSet)
+router.register(r"workouts", views.WorkoutSuggestionViewSet)
 
 urlpatterns = [
     path("api/", include(router.urls)),
